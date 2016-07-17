@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class="main">
+		<div class="content">
+			<div class="qna">
+				<div class="description"><p class="dscrpPg"></p></div>
+				<p id="question" class="qn"></p>
+				<p id="chc1" class="ans"></p>
+				<p id="chc2" class="ans"></p>
+				<p id="chc3" class="ans"></p>
+				<p id="chc4" class="ans"></p>
+				<button id="submitButton" class="activeSubmitButton">Submit</button>
+
+			</div>
+			<div class="progress">
+				<div class="indicators">
+					<div id="stt1" class="current state"><p class="qnNumber">1</p></div>
+					<div id="stt2" class="state"><p class="qnNumber">2</p></div>
+					<div id="stt3" class="state"><p class="qnNumber">3</p></div>
+					<div id="stt4" class="state"><p class="qnNumber">4</p></div>
+					<div id="stt5" class="state"><p class="qnNumber">5</p></div>
+				</div>
+				
+				<button id="nextButton" class="" >Next</button>
+				<button id="scoreButton" class="" >See Score</button>
+			</div>
+
+		</div>
+		<div class="score">
+			<h1>Congratulations on Completing the Quiz!</h1>
+			<h2>Your Score is <span id="crct"></span> out of <span id='ttlQn'></span>.</h2>
+			<button id="retakeButton">Retake Quiz</button>
+		</div>
+		<div class="landingPage">
+			<h1>Welcome to JavaScript Quiz</h1>
+			<button id="strtQzButton">Start Quiz</button>
+		</div>
+	</section>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
