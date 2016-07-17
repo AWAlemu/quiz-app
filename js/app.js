@@ -145,7 +145,6 @@ function displayScore(score) {
 }
  
 function evaluateAnswer(qn, userAnswer) {
-	console.log(qn);
 	if (qns[qn].ans === userAnswer) {
 		return true;
 	}
@@ -184,7 +183,6 @@ function activateAnswerSelection(qnNum, userAnswer, score) {
 
 function activateSubmit(qnNum, userAnswer, score) {
 	$('#submitButton').on('click', function() {
-		console.log(qnNum);
 		disableSubmit();
 		disableAnswerSelection();
 		var correct = evaluateAnswer(qnNum, userAnswer);
